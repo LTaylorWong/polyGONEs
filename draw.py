@@ -10,7 +10,10 @@ def add_polygon( points, x0, y0, z0, x1, y1, z1, x2, y2, z2 ):
     add_point(x2,y2,z2)
 
 def draw_polygons( points, screen, color ):
-    pass
+    ##draw_line(screen, points[],points[],points[],points[])
+    ##draw_line(screen, points[],points[],points[],points[])
+    ##draw_line(screen, points[],points[],points[],points[])
+    
 
 def add_box( points, x, y, z, width, height, depth ):
     x1 = x + width
