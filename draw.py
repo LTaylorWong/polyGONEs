@@ -10,12 +10,12 @@ def add_polygon( points, x0, y0, z0, x1, y1, z1, x2, y2, z2 ):
     add_point(x2,y2,z2)
 
 def draw_polygons( points, screen, color ):
-    ##x = 0
-    ##while x < len(points)
-    ##draw_line(screen, points[x][0],points[x][1],points[x+1][0],points[x+1][1],color)
-    ##draw_line(screen, points[x+1][0],points[x+1][1],points[x+2][0],points[x+2][1],color)
-    ##draw_line(screen, points[x+2][0],points[x+2][1],points[x+3][0],points[x+3][1],color)
-    pass
+    x = 0
+    while x < len(points)
+    draw_line(screen, points[x][0],points[x][1],points[x+1][0],points[x+1][1],color)
+    draw_line(screen, points[x+1][0],points[x+1][1],points[x+2][0],points[x+2][1],color)
+    draw_line(screen, points[x][0],points[x][1],points[x+2][0],points[x+2][1],color)
+    x += 3
 
 def add_box( points, x, y, z, width, height, depth ):
     x1 = x + width
