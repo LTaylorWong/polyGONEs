@@ -5,13 +5,16 @@ import math
 MAX_STEPS = 100
 
 def add_polygon( points, x0, y0, z0, x1, y1, z1, x2, y2, z2 ):
-    add_point(x0,y0,z1)
+    add_point(x0,y0,z0)
     add_point(x1,y1,z1)
     add_point(x2,y2,z2)
 
 def draw_polygons( points, screen, color ):
+    if len( matrix ) < 2:
+        print "Need at least 2 points to draw a line"
+        
     x = 0
-    while x < len(points):
+    while x < len(points) - 2:
         draw_line(screen, points[x][0],points[x][1],points[x+1][0],points[x+1][1],color)
         draw_line(screen, points[x+1][0],points[x+1][1],points[x+2][0],points[x+2][1],color)
         draw_line(screen, points[x][0],points[x][1],points[x+2][0],points[x+2][1],color)
