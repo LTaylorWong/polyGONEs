@@ -143,7 +143,7 @@ def generate_torus( points, cx, cy, cz, r0, r1, step ):
             z = (math.sin( 2 * math.pi * rot ) *
                  (r0 * math.cos(2 * math.pi * circ) + r1))
             
-            add_point( points, x, y, z )
+            add_polygon( points, x, y, z )
 
             circle+= step
         rotation+= step
