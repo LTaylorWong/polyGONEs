@@ -97,7 +97,7 @@ def generate_sphere( points, cx, cy, cz, r, step ):
             y = r * math.sin( 2 * math.pi * circ ) * math.cos( 2 * math.pi * rot ) + cy
             z = r * math.sin( 2 * math.pi * circ ) * math.sin( 2 * math.pi * rot ) + cz
             
-            add_point( points, x, y, z )
+            add_polygon( points, x, y, z )
 
             circle+= step
         rotation+= step
